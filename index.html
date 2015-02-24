@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <title>CSE 3901 Schedule (Spring 2015) </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body onload="getIds()">
+
+    <h1>CSE 3901 Schedule (Spring 2015)</h1>
+
+    <p><button type="button" onclick="goToDay()">Today</button>&nbsp;<button type="button">Toggle View</button>
+    </p>
+
+    <table border="on" id="schedule">
+        <thead>
+            <tr>
+                <th scope="col">Meeting</th>
+                <th scope="col">Day</th>
+                <th scope="col">Date</th>
+                <th scope="col">Topic/Notes</th>
+                <th scope="col">Due Dates</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <!-- WEEK 1 -->
+
+            <tr id="2015-1-13">
+                <td>1</td>
+                <td>Tu</td>
+                <td>Jan 13</td>
+                <td>Welcome</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-1-15">
+                <td>2</td>
+                <td>Th</td>
+                <td>Jan 15</td>
+                <td>Web application architectures; networking concepts</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-1-18">
+                <td></td>
+                <td>Su</td>
+                <td>Jan 18</td>
+                <td>Nothing Due</td>
+                <td>Task 1 (Group Formation) Due</td>
+            </tr>
+
+            <!-- WEEK 2 -->
+
+            <tr id="2015-1-20">
+                <td>3</td>
+                <td>Tu</td>
+                <td>Jan 20</td>
+                <td>HTTP</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-1-22">
+                <td>4</td>
+                <td>Th</td>
+                <td>Jan 22</td>
+                <td>Distributed Version Control</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-1-25">
+                <td></td>
+                <td>Su</td>
+                <td>Jan 25</td>
+                <td></td>
+                <td>Project 1 (group formation and VM config)</td>
+            </tr>
+
+            <!-- WEEK 3 -->
+
+            <tr id="2015-1-27">
+                <td>5</td>
+                <td>Tu</td>
+                <td>Jan 27</td>
+                <td>Regular Expressions</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-1-29">
+                <td>6</td>
+                <td>Th</td>
+                <td>Jan 29</td>
+                <td>HTML</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-2-1">
+                <td></td>
+                <td>Su</td>
+                <td>Feb 1</td>
+                <td></td>
+                <td>Project 2 (HTTP and Linux Tools)</td>
+            </tr>
+
+            <!-- WEEK 4 -->
+
+            <tr id="2015-2-3">
+                <td>7</td>
+                <td>Tu</td>
+                <td>Feb 3</td>
+                <td>CSS 1</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-2-5">
+                <td>8</td>
+                <td>Th</td>
+                <td>Feb 5</td>
+                <td>CSS 2</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-2-8">
+                <td></td>
+                <td>Su</td>
+                <td>Feb 8</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- WEEK 5 -->
+
+            <tr id="2015-2-10">
+                <td>9</td>
+                <td>Tu</td>
+                <td>Feb 10</td>
+                <td>Color and Graphics</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-2-12">
+                <td>10</td>
+                <td>Th</td>
+                <td>Feb 12</td>
+                <td>Technical Writing 1</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-2-15">
+                <td></td>
+                <td>Su</td>
+                <td>Feb 15</td>
+                <td></td>
+                <td>Project 3 (Web scraping and HTML/CSS)</td>
+            </tr>
+
+            <!-- WEEK 6 -->
+
+            <tr id="2015-2-17">
+                <td>11</td>
+                <td>Tu</td>
+                <td>Feb 17</td>
+                <td>JavaScript 1</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-2-19">
+                <td>12</td>
+                <td>Th</td>
+                <td>Feb 19</td>
+                <td>JavaScript 2</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-2-22">
+                <td></td>
+                <td>Su</td>
+                <td>Feb 22</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- WEEK 7 -->
+
+            <tr id="2015-2-24">
+                <td>13</td>
+                <td>Tu</td>
+                <td>Feb 24</td>
+                <td>Ruby 1</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-2-26">
+                <td>14</td>
+                <td>Th</td>
+                <td>Feb 26</td>
+                <td>Ruby 2</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-3-1">
+                <td></td>
+                <td>Su</td>
+                <td>Mar 1</td>
+                <td></td>
+                <td>Project 4 (JavaScript)</td>
+            </tr>
+
+            <!-- WEEK 8 -->
+
+            <tr id="2015-3-3">
+                <td>15</td>
+                <td>Tu</td>
+                <td>Mar 3</td>
+                <td>Ruby 3</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-3-5">
+                <td>16</td>
+                <td>Th</td>
+                <td>Mar 5</td>
+                <td>Midterm exam review</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-3-8">
+                <td></td>
+                <td>Su</td>
+                <td>Mar 8</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- WEEK 9 -->
+
+            <tr class="special" id="2015-3-10">
+                <td>17</td>
+                <td>Tu</td>
+                <td>Mar 10</td>
+                <td>Midterm exam</td>
+                <td></td>
+            </tr>
+
+            <tr class="special" id="2015-3-12">
+                <td>18</td>
+                <td>Th</td>
+                <td>Mar 12</td>
+                <td>No Class Today</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-3-15">
+                <td></td>
+                <td>Su</td>
+                <td>Mar 15</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- WEEK 10 -->
+
+            <tr class="special" id="2015-3-17">
+                <td></td>
+                <td>Tu</td>
+                <td>Mar 17</td>
+                <td>Spring Break - no classes</td>
+                <td></td>
+            </tr>
+
+            <tr class="special" id="2015-3-19">
+                <td></td>
+                <td>Th</td>
+                <td>Mar 19</td>
+                <td>Spring Break - no classes</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-3-22">
+                <td></td>
+                <td>Su</td>
+                <td>Mar 22</td>
+                <td></td>
+                <td>Project 5 (Mini Mashup and Ruby)</td>
+            </tr>
+
+            <!-- WEEK 11 -->
+
+            <tr id="2015-3-24">
+                <td>19</td>
+                <td>Tu</td>
+                <td>Mar 24</td>
+                <td>Technical Writing 2</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-3-26">
+                <td>20</td>
+                <td>Th</td>
+                <td>Mar 26</td>
+                <td>Technical Writing 3</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-3-29">
+                <td></td>
+                <td>Su</td>
+                <td>Mar 29</td>
+                <td></td>
+                <td>Proposals for Final Project</td>
+            </tr>
+
+            <!-- WEEK 12 -->
+
+            <tr id="2015-3-31">
+                <td>21</td>
+                <td>Tu</td>
+                <td>Mar 31</td>
+                <td>MVC and Rails 1</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-4-2">
+                <td>22</td>
+                <td>Th</td>
+                <td>Apr 2</td>
+                <td>Rails 2</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-4-5">
+                <td></td>
+                <td>Su</td>
+                <td>Apr 5</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- WEEK 13 -->
+
+            <tr id="2015-4-7">
+                <td>23</td>
+                <td>Tu</td>
+                <td>Apr 7</td>
+                <td>Rails 3</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-4-9">
+                <td>24</td>
+                <td>Th</td>
+                <td>Apr 9</td>
+                <td>Rails 4</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-4-12">
+                <td></td>
+                <td>Su</td>
+                <td>Apr 12</td>
+                <td></td>
+                <td>Final Project Due</td>
+            </tr>
+
+            <!-- WEEK 14 -->
+
+            <tr id="2015-4-14">
+                <td>25</td>
+                <td>Tu</td>
+                <td>Apr 14</td>
+                <td>Final Project Presentations</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-4-16">
+                <td>26</td>
+                <td>Th</td>
+                <td>Apr 16</td>
+                <td>Final Project Presentations</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-4-19">
+                <td></td>
+                <td>Su</td>
+                <td>Apr 19</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- WEEK 15 -->
+
+            <tr id="2015-4-21">
+                <td>27</td>
+                <td>Tu</td>
+                <td>Apr 21</td>
+                <td>Special Considerations</td>
+                <td></td>
+            </tr>
+
+            <tr id="2015-4-28">
+                <td>28</td>
+                <td>Th</td>
+                <td>Apr 23</td>
+                <td>Final Exam Review</td>
+                <td></td>
+            </tr>
+
+            <tr class="sunday" id="2015-4-26">
+                <td></td>
+                <td>Su</td>
+                <td>Apr 26</td>
+                <td></td>
+                <td>Nothing Due</td>
+            </tr>
+
+            <!-- FINAL EXAM WEEK -->
+
+            <tr class="special" id="2015-5-1">
+                <td></td>
+                <td>Fr</td>
+                <td>May 1</td>
+                <td>FINAL EXAM</td>
+                <td>8:00 - 9:45 PM</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
