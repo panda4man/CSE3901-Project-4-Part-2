@@ -1,4 +1,12 @@
-thead tr { background-color: #ffff00; }
-tbody.tr { background-color: #eeeeee; }
-tbody tr.special { background-color: #ffcccc; }
-tbody tr.sunday * { font-style: italic; }
+thead tr {
+    background-color: #ffff00;
+}
+tbody.tr {
+    background-color: #eeeeee;
+}
+tbody tr.special {
+    background-color: #ffcccc;
+}
+tbody tr.sunday * {
+    font-style: italic;
+}
