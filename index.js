@@ -38,5 +38,28 @@ function goToDay() {
 }
 
 function toggleTable() {
-    
+    var today = (new Date()).getTime();
+    var table = document.getElementById('schedule');
+    if (toggle) {
+        for (var i = 0, row; row = table.rows[i]; i++) {
+            if (i == 0) continue;
+            var current = (new Date(row.id)).getTime();
+            if (today > current) {
+                row.style.display = "none";
+            } else {
+                break;
+            }
+        }
+    } else {
+        for (var j = 0, row; row = table.rows[j]; j++) {
+            if (j == 0) continue;
+            var current = (new Date(row.id)).getTime();
+            if (today > current) {
+                row.style.display = "table-row";
+            } else {
+                break;
+            }
+        }
+    }
+    toggle = !toggle;
 }
