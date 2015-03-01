@@ -38,5 +38,25 @@ function goToDay() {
 }
 
 function toggleTable() {
+    var today = (new Date()).getTime();
     
+    if (toggle) {
+        for (var i = 0; i < id_list.length; i++) {
+            if (!(today >= id_list[i].time && today <= id_list[i+1].time) && !(id_list[i].time >= today)) {
+                // collapse in this case
+                var row = document.getElementById(id_list[i].hash);
+                row.hidden = true;
+            }
+        }
+    } else {
+        for (var i = 0; i < id_list.length; i++) {
+            if (!(today >= id_list[i].time && today <= id_list[i+1].time) && !(id_list[i].time >= today)) {
+                // un-collapse in this case
+                var row = document.getElementById(id_list[i].hash);
+                row.hidden = false;
+            }
+        }
+    }
+    
+    toggle = !toggle;
 }
