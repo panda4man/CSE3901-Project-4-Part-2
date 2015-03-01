@@ -10,7 +10,8 @@ function getIds() {
     for (var i = 0, row; row = table.rows[i]; i++) {
         if (i == 0) continue;
         var id = row.id;
-        var date = new Date(id);
+        var valid_date = id.replace(/-/g, "/");
+        var date = new Date(valid_date);
         var object = {
             'hash': id,
             'time': date.getTime()
