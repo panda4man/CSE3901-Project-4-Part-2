@@ -18,6 +18,8 @@ function getIds() {
         }
         id_list.push(object);
     }
+    //set anchor href
+    goToDay();
 }
 
 /**
@@ -27,12 +29,13 @@ function getIds() {
  */
 function goToDay() {
     window.location.hash = "";
+    var anchor = document.getElementById('go-to-today');
     var today = (new Date()).getTime();
     for (var i = 0; i < id_list.length; i++) {
         var current = id_list[i];
         var next = id_list[i + 1];
         if (today >= current.time && today <= next.time) {
-            location.hash = current.hash;
+            anchor.href = '#' + current.hash;
             break;
         }
     }
